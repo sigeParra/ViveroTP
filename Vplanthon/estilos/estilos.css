@@ -1,0 +1,193 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: bold;
+}
+
+/* Estilos del Menú de Navegación */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #285430;
+	padding: 10px;
+}
+
+.navbar-logo {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-logo a {
+	margin-right: 10px;
+}
+
+.navbar-title {
+	font-size: 18px;
+}
+
+.navbar-menu li {
+	display: inline;
+	margin-left: 10px;
+}
+
+.navbar-menu li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+li a:hover {
+	color: rgb(171, 154, 56);
+}
+
+/*Estilos de vivero*/
+
+.fila {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 3%;
+}
+
+.fila img:hover {
+	cursor: crosshair;
+	opacity: 5;
+	filter: contrast(120%);
+	width: 60%;
+}
+
+.segmento {
+	width: 30%;
+}
+
+.plantas {
+	width: 50%;
+	height: 50%;
+	margin: 2% 0 0 25%;
+	border-radius: 10%;
+	justify-content: center;
+	box-shadow: 0.15vw 0.15vw 0.15vw 0.15vw #285430;
+}
+
+.nombre {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 80%;
+	color: black;
+	font-weight: 600;
+	font-size: xx-large;
+}
+
+.descripcion {
+	display: flex;
+	height: 100%;
+	width: 90%;
+	margin: 0% auto 30% auto;
+	text-align: justify;
+	justify-content: center;
+	font-size: large;
+	color: #4f5350;
+}
+
+@media only screen and (max-width: 640px) {
+	.fila {
+	  display: flex;
+	  margin: 0% auto 0% auto;
+	  flex-direction: column;
+	  align-items: center;
+	  width: 90%;
+	}
+	.fila img:hover {
+		width: 75%;
+	}
+	.segmento{
+		width: 90%;
+	}
+	.plantas {
+		width: 70%;
+		height: 40%;
+		margin: 2% 0 0 15%;
+		box-shadow: 0.50vw 0.50vw 0.50vw 0.50vw #285430c9;
+
+	}
+	.nombre {
+		font-size: large;
+		margin: 10% auto 10% auto;
+    }
+ 	.descripcion {
+		display: flex;
+		font-size: medium;
+		color: black;
+ 	}
+}
+@media only screen and (min-width: 640px) and (max-width: 1280px) {
+	.fila {
+	  display: flex;
+	  margin: 2% auto 0% auto;
+	  width: 90%;
+	}
+	.fila img:hover {
+		width: 80%;
+	}
+	.segmento{
+		width: 90%;
+	}
+	.plantas {
+		width: 70%;
+		height: 40%;
+		margin: 2% 0 0 15%;
+		box-shadow: 0.30vw 0.30vw 0.30vw 0.30vw #285430c9;
+
+	}
+	.nombre {
+		font-size: large;
+		margin: 10% auto 10% auto;
+    }
+ 	.descripcion {
+		display: flex;
+		font-size: medium;
+		color: black;
+ 	}
+}
+@media only screen and (min-width: 1280px){
+	.fila {
+		display: flex;
+		margin: 3% auto 0% auto;
+		width: 90%;
+	}
+	.fila img:hover {
+		width: 80%;
+	}
+	.plantas{
+		width: 70%;
+		height: 40%;
+		margin: 2% 0 0 13%;
+	}
+}
+  
+
+/*estilos del pie de pagina*/
+
+footer {
+	position: static;
+	background: #285430;
+	bottom: 0px;
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	font-weight: bold;
+}
